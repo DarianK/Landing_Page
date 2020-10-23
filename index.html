@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel = "stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dossis:300,400,700"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <title>PS5 Landing Page</title>
+    </head>
+    <body>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="display()"> 
+                <span class="span span-1"></span>
+                <span class="span span-2"></span>
+                <span class="span span-3"></span>
+            </div> 
+            <ul> 
+                <li><a href=#showcase>Home</a></li>
+                <li><a href=#games>Games</a></li>
+                <li><a href=#features>Features</a></li>
+            </ul> 
+        </div>
+
+        <section id="showcase">
+            <div class="video-container">
+                <video src="trailer.mp4" autoplay muted loop></video>
+            </div>
+            <div class="overlay"></div>
+            <a href="#preorder" class="btn">November 12</a>
+        </section>
+        
+        <section id="games">
+            <h1 id="games_header">A New Generation of Games</h1>
+            <div class="card_grid"> 
+                <div class="card card-1"> 
+                    <img src="imgs/spiderman.jpg"/>
+                    <h1>Spiderman: Miles Morales</h1>
+                </div>
+                <div class="card card-2"> 
+                    <img src="imgs/demons_souls.jpg"/>
+                    <h1>Demon's Souls</h1>
+                </div>
+                <div class="card card-3"> 
+                    <img src="imgs/pragmata.jpg"/>
+                    <h1>Pragmata</h1>
+                </div>
+                <div class="card card-4"> 
+                    <img src="imgs/re8.jpg"/>
+                    <h1>Resident Evil 8</h1>
+                </div>
+                <div class="card card-5"> 
+                    <img src="imgs/dmc5.jpg"/>
+                    <h1>Devil May Cry 5 SE</h1>
+                </div>
+                 <div class="card card-6"> 
+                    <img src="imgs/hzd.jpeg"/>
+                    <h1>Horizon Zero Dawn: Forbidden West</h1>
+                </div>
+                <div class="card card-7"> 
+                    <img src="imgs/gt7.jpg"/>
+                    <h1>Gran Turismo 7</h1>
+                </div>
+                <div class="card card-8"> 
+                    <img src="imgs/rac.jpg"/>
+                    <h1>Ratchet &amp; Clank</h1>
+                </div>
+                <div class="card card-9"> 
+                    <img src="imgs/hitman3.jpg"/>
+                    <h1>Hitman 3</h1>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <h1 id="features_header">An Upgraded Experience</h1>
+            <div class="features_display">
+                <div id="display"></div>
+                <div class="information">
+                    <h3 id="information_key">Backwards Compatibility</h3>
+                    <p id="information_expand">Access a catalog of PS4 games on your PS5 console</p>
+                    <h3 id="information_key">Game Boost</h3>
+                    <p id="information_expand">Enjoy faster and smoother frame rates in select PS4 and PS VR titles</p>
+                    <h3 id="information_key">Upgrade PS4 games to digital PS5 games</h3>
+                    <p id="information_expand">Giving pubishers the ability to let players upgrade their digital and disc-based games for digital PS5 games</p>
+                    <h3 id="information_key">PlayStation VR integration</h3>
+                    <p id="information_expand">Connect your PS VR to your PS5 console to enjoy supported PS VR games</p>
+                    <h3 id="information_key">DualSense Wireless Controller</h3>
+                    <p id="information_expand">Haptic feedback and adaptive triggers allow players to feel the impact of in-game actions</p>
+                    <h3 id="information_key">Tempest 3D AudioTech</h3>
+                    <p id="information_expand">Tempest 3D AudioTech in supported games allows players to immerse themselves in soundscapes 
+                    where it feels as if the sound comes from every direction.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="slogan"></section>
+
+        <script>
+            function display() { document.getElementById('sidebar').classList.toggle('active');}
+        </script>
+    </body>
+</html>
